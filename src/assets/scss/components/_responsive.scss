@@ -1,0 +1,6 @@
+@include breakpoint(large) {
+  // Home page
+  .map {
+    height: rem-calc(950);
+  }
+}

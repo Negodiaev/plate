@@ -1,0 +1,13 @@
+.hero {
+  position: relative;
+  .decor-picture {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    z-index: 1;
+  }
+}
+
+.hero-item {
+  background: $body-background url(../../assets/img/bg-hero.jpg) 50% 50% no-repeat / cover;
+}

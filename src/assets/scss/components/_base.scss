@@ -18,19 +18,19 @@ body,
 .off-canvas {
   &.is-open {
     & ~ .off-canvas-content {
-      // .burger {
-      //   i {
-      //     &:first-child() {
-      //       transform: translateY(8px) rotate(45deg);
-      //     }
-      //     &:nth-child(2) {
-      //       opacity: 0;
-      //     }
-      //     &:nth-child(3) {
-      //       transform: translateY(-8px) rotate(-45deg);
-      //     }
-      //   }
-      // }
+      .burger {
+        i {
+          &:first-child() {
+            transform: translateY(8px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+          }
+        }
+      }
     }
   }
 }
@@ -57,8 +57,20 @@ button {
   transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
 
+button {
+  cursor: pointer;
+}
+
 svg {
   display: inline-block;
   vertical-align: middle;
   fill: currentColor;
+}
+
+.section {
+  padding: rem-calc(10 0);
+  background-color: $body-background;
+  &.gray {
+    background-color: $light-gray;
+  }
 }
