@@ -1,0 +1,17 @@
+.side {
+  padding-top: rem-calc(20);
+  .main-menu {
+    li {
+      & + li {
+        border-top: 1px solid #d3d3d3;
+      }
+    }
+    a {
+      font-size: 1rem;
+      color: $anchor-color;
+      &:hover {
+        color: scale-color($primary-color, $lightness: -12%);
+      }
+    }
+  }
+}

@@ -1,13 +1,27 @@
 .hero {
   position: relative;
-  .decor-picture {
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    z-index: 1;
-  }
+  background: $dark-gray url(../../assets/img/bg-hero.jpg) 50% 50% no-repeat / cover;
+  background-attachment: fixed;
 }
 
-.hero-item {
-  background: $body-background url(../../assets/img/bg-hero.jpg) 50% 50% no-repeat / cover;
+.hero-slide-inner {
+  box-sizing: border-box;
+  padding: rem-calc(78 0 50);
+}
+
+.hero-content {
+  padding: rem-calc(10);
+  border-radius: rem-calc(10);
+  background-color: rgba($white, 0.82);
+  box-shadow: 1px 1px 20px rgba($black, 0.22);
+}
+
+.hero-picture {
+  position: relative;
+  img {
+    position: absolute;
+    bottom: rem-calc(-123);
+    left: rem-calc(-173);
+    z-index: 1;
+  }
 }

@@ -1,0 +1,75 @@
+.head-wrapper {
+  position: absolute;
+  z-index: 1010;
+  width: 100%;
+}
+
+.head {
+  padding: rem-calc(16 0 12);
+  line-height: 1;
+  color: $white;
+  background: url(../../assets/img/gradient-top.png) 50% 0 no-repeat;
+  // background-image: linear-gradient(rgba($black, 0.9), transparent);
+  transition: background-color 0.15s ease-out, padding 0.15s linear;
+  &.is-stuck {
+    background-color: rgba($black, 0.7);
+    transition-timing-function: ease-in, linear;
+  }
+  .logo {
+    margin: rem-calc(-36) auto 0;
+  }
+}
+
+.logo {
+  max-width: rem-calc(186);
+  a {
+    border: 0;
+  }
+}
+
+.navigation {
+  .main-menu {
+    padding: rem-calc(5 0);
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    li {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main-menu {
+  li {
+    font-size: rem-calc(14);
+  }
+  a {
+    border-color: rgba($white, 0.6);
+    color: $white;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      color: $anchor-color-hover;
+    }
+  }
+}
+
+.callback {
+  font-size: rem-calc(15);
+}
+
+.callback-phone {
+  border: 0;
+  color: $anchor-color-hover;
+}
+
+.callback-info {
+  a {
+    display: inline-block;
+    border-color: rgba($white, 0.6);
+    color: $white;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}

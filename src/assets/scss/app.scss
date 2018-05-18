@@ -3,7 +3,7 @@
 // @import 'settings';
 @import 'variables';
 @import 'foundation';
-// @import 'motion-ui';
+@import 'motion-ui';
 
 @include foundation-global-styles;
 // @include foundation-grid;
@@ -25,7 +25,7 @@
 @include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
-// @include foundation-dropdown;
+@include foundation-dropdown;
 // @include foundation-dropdown-menu;
 // @include foundation-responsive-embed;
 // @include foundation-label;
@@ -50,19 +50,24 @@
 
 // @include foundation-prototype-classes;
 
-// @include motion-ui-transitions;
-// @include motion-ui-animations;
+@include motion-ui-transitions;
+@include motion-ui-animations;
 
 // Custom styles
+@import 'vendor/swiper';
+
 @import 'components/base';
 @import 'components/buttons';
 @import 'components/sprite';
+@import 'components/head';
+@import 'components/footer';
 @import 'components/hero';
+@import 'components/side';
+@import 'components/slider';
 @import 'components/menus';
 @import 'components/about';
+@import 'components/map';
 @import 'components/responsive';
-
-@import 'vendor/swiper';
 
 @import 'pages/home';
 @import 'pages/page';

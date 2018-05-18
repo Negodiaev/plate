@@ -1,0 +1,23 @@
+.slider {
+  .swiper-pagination {
+    bottom: rem-calc(8);
+    left: 0;
+    width: 100%;
+    line-height: 1;
+    text-align: center;
+    .swiper-pagination-bullet {
+      margin: rem-calc(0 5);
+      width: rem-calc(20);
+      height: rem-calc(20);
+      border: 3px solid $primary-color;
+      border-radius: 50%;
+      outline: 0;
+      opacity: 1;
+      background-color: $white;
+    }
+    .swiper-pagination-bullet-active {
+      border-color: $white;
+      background-color: $primary-color;
+    }
+  }
+}

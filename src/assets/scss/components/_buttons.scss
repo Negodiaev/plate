@@ -28,3 +28,9 @@
     }
   }
 }
+
+.button {
+  font-weight: $global-weight-bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

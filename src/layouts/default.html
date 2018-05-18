@@ -23,14 +23,19 @@
       map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: 57.971901, lng: 56.244853 },
         zoom: 16,
-        controls: ['zoomControl']
+        disableDefaultUI: true,
       });
 
-      map.behaviors.disable(['scrollZoom', 'drag', 'rightMouseButtonMagnifier']);
+      var marker = new google.maps.Marker({
+        position: { lat: 57.971901, lng: 56.244853 },
+        map: map
+      });
+
+      // map.behaviors.disable(['scrollZoom', 'drag', 'rightMouseButtonMagnifier']);
     }
   </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTBBV7bHzXujhrXUQoCCYlnPG5y-U9414&amp;callback=initMap">
-  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTBBV7bHzXujhrXUQoCCYlnPG5y-U9414&amp;callback=initMap" async
+    defer></script>
   <script src="{{root}}assets/js/app.js"></script>
 </body>
 

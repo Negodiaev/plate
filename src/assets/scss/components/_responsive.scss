@@ -1,5 +1,136 @@
+@include breakpoint(small only) {
+  // Home page
+  .button {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .hero-content {
+    margin: 0 auto;
+    max-width: rem-calc(380);
+  }
+}
+
+@include breakpoint(medium) {
+  // Home page
+  .button {
+    letter-spacing: 0.1em;
+  }
+  .head {
+    padding-top: rem-calc(18);
+    padding-bottom: rem-calc(15);
+    .logo {
+      margin-top: rem-calc(-23);
+    }
+  }
+  .logo {
+    max-width: rem-calc(135);
+  }
+  .navigation {
+    .main-menu {
+      margin-left: rem-calc(-10);
+      margin-right: rem-calc(-10);
+    }
+  }
+  .hero-content {
+    padding: rem-calc(20 40);
+    border-radius: rem-calc(30);
+    box-shadow: 1px 1px 98px rgba($black, 0.22);
+    .button {
+      padding: rem-calc(20 48 22);
+    }
+  }
+}
+
 @include breakpoint(large) {
   // Home page
+  .head {
+    padding-top: rem-calc(38);
+    padding-bottom: rem-calc(85);
+    &.is-stuck {
+      padding-top: rem-calc(11);
+      padding-bottom: rem-calc(12);
+    }
+    .logo {
+      margin: rem-calc(-46 0 0);
+    }
+  }
+  .logo {
+    max-width: none;
+  }
+  .navigation {
+    .main-menu {
+      padding-top: rem-calc(21);
+      li {
+        font-weight: $global-weight-bold;
+      }
+    }
+  }
+  .callback-phone {
+    display: inline-block;
+    margin-bottom: rem-calc(12);
+    font-size: rem-calc(28);
+    font-weight: $global-weight-bold;
+  }
+  .hero-content {
+    padding: rem-calc(30 50);
+  }
+  .hero-slide-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: rem-calc(95);
+    min-height: rem-calc(680);
+    max-height: rem-calc(893);
+  }
+  .map {
+    height: rem-calc(950);
+  }
+}
+
+@include breakpoint(xlarge) {
+  // Home page
+  .navigation {
+    .main-menu {
+      margin-left: rem-calc(-20);
+      margin-right: rem-calc(-42);
+      li {
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+  .slider {
+    .swiper-pagination {
+      bottom: rem-calc(65);
+    }
+  }
+  .hero-slide-inner {
+    padding-top: rem-calc(220);
+    padding-bottom: rem-calc(120);
+    height: rem-calc(893);
+    height: 100vh;
+  }
+  .hero-content {
+    padding: rem-calc(51 85 38);
+    .page-title {
+      margin-bottom: rem-calc(32);
+    }
+  }
+}
+
+@include breakpoint(xxlarge) {
+  // Home page
+  .menus,
+  .about {
+    background-repeat: no-repeat, no-repeat;
+  }
+  .menus {
+    background-image: url(../../assets/img/dishes/1.png), url(../../assets/img/dishes/2.png);
+    background-position: 100% 0, 0 100%;
+  }
+  .about {
+    background-image: url(../../assets/img/dishes/3.png), url(../../assets/img/dishes/4.png);
+    background-position: 100% 0, 0 100%;
+  }
   .map {
     height: rem-calc(950);
   }
