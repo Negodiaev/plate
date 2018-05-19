@@ -4,9 +4,40 @@
     padding-left: 1em;
     padding-right: 1em;
   }
+  .content {
+    blockquote {
+      font-size: rem-calc(20);
+    }
+  }
   .hero-content {
     margin: 0 auto;
-    max-width: rem-calc(380);
+  }
+  .hero-content,
+  .blocks .card {
+    max-width: rem-calc(400);
+  }
+  .company {
+    height: rem-calc(120);
+  }
+  .map-address {
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(10);
+  }
+  .map-address-info {
+    width: 100%;
+  }
+  .footer {
+    .logo {
+      margin: rem-calc(-30) auto rem-calc(10);
+    }
+  }
+  .footer-col {
+    &.logo-col {
+      background-color: #211c1c;
+    }
+  }
+  .copyright {
+    font-size: rem-calc(14);
   }
 }
 
@@ -14,6 +45,10 @@
   // Home page
   .button {
     letter-spacing: 0.1em;
+  }
+  .section {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
   }
   .head {
     padding-top: rem-calc(18);
@@ -39,10 +74,61 @@
       padding: rem-calc(20 48 22);
     }
   }
+  .blocks {
+    .card {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  .map-wrapper {
+    height: rem-calc(700);
+  }
+  .footer {
+    .main-menu {
+      padding-top: rem-calc(40);
+      align-items: flex-start;
+      li {
+        & + li {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .copyright,
+  .scl-link {
+    margin-top: auto;
+  }
+  .scl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: rem-calc(40);
+    padding-bottom: rem-calc(6);
+  }
+  .scl-menu {
+    &.simple {
+      li {
+        & + li {
+          margin-left: rem-calc(20);
+        }
+      }
+    }
+  }
+  .map-address {
+    letter-spacing: 0;
+  }
 }
 
 @include breakpoint(large) {
   // Home page
+  .section-title {
+    margin-bottom: rem-calc(54);
+  }
   .head {
     padding-top: rem-calc(38);
     padding-bottom: rem-calc(85);
@@ -79,11 +165,105 @@
     flex-direction: column;
     justify-content: center;
     padding-top: rem-calc(95);
-    min-height: rem-calc(680);
-    max-height: rem-calc(893);
+    min-height: rem-calc(630);
+    max-height: rem-calc(843);
   }
-  .map {
-    height: rem-calc(950);
+  .menus {
+    padding-top: rem-calc(106);
+    padding-bottom: rem-calc(30);
+  }
+  .blocks {
+    .card {
+      margin-bottom: rem-calc(27);
+      min-height: rem-calc(350);
+    }
+  }
+  .content {
+    li {
+      margin-bottom: rem-calc(36);
+    }
+  }
+  .card-info {
+    padding-top: rem-calc(25);
+  }
+  .advantages {
+    padding-top: rem-calc(401);
+    padding-bottom: rem-calc(172);
+    .card {
+      padding-top: rem-calc(45);
+    }
+  }
+  .about {
+    padding-top: rem-calc(42);
+    padding-bottom: rem-calc(30);
+    p {
+      margin-bottom: rem-calc(30);
+    }
+    img {
+      margin-bottom: rem-calc(56);
+    }
+    .section-title {
+      margin-bottom: rem-calc(50);
+    }
+    .section-subtitle {
+      margin-bottom: rem-calc(40);
+    }
+  }
+  .about-info {
+    padding-left: rem-calc(27);
+    blockquote {
+      margin-left: rem-calc(-15);
+    }
+  }
+  .feedback {
+    padding-top: rem-calc(54);
+    padding-bottom: rem-calc(35);
+    .section-title {
+      margin-bottom: rem-calc(64);
+    }
+  }
+  .review {
+    padding: rem-calc(30 20 20);
+  }
+  .footer {
+    .main-menu {
+      padding-top: rem-calc(51);
+    }
+  }
+  .footer-col {
+    &.menu-col {
+      padding-left: rem-calc(40);
+    }
+  }
+  .scl-title {
+    margin-bottom: rem-calc(31);
+  }
+  .scl-link {
+    margin-bottom: 0;
+  }
+}
+
+@include breakpoint(1280px) {
+  // Home page
+  .slider-wrapper {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: block;
+    }
+    .swiper-button-prev {
+      left: rem-calc(-43);
+    }
+    .swiper-button-next {
+      right: rem-calc(-43);
+    }
+  }
+  .feedback {
+    .slider-wrapper {
+      margin-bottom: rem-calc(38);
+      .swiper-pagination {
+        display: none;
+      }
+    }
   }
 }
 
@@ -98,16 +278,18 @@
       }
     }
   }
-  .slider {
-    .swiper-pagination {
-      bottom: rem-calc(65);
+  .hero {
+    .slider-wrapper {
+      .swiper-pagination {
+        bottom: rem-calc(65);
+      }
     }
   }
   .hero-slide-inner {
-    padding-top: rem-calc(220);
-    padding-bottom: rem-calc(120);
-    height: rem-calc(893);
-    height: 100vh;
+    padding-top: rem-calc(200);
+    padding-bottom: rem-calc(50);
+    height: rem-calc(843);
+    // height: 100vh;
   }
   .hero-content {
     padding: rem-calc(51 85 38);
@@ -115,23 +297,76 @@
       margin-bottom: rem-calc(32);
     }
   }
+  .about {
+    .section-title {
+      margin-top: rem-calc(21);
+    }
+  }
+  .footer-col {
+    &.menu-col {
+      padding-left: rem-calc(92);
+    }
+  }
+  .scl {
+    margin-left: rem-calc(-40);
+    margin-right: rem-calc(-40);
+    background-color: #211c1c;
+  }
+  .scl-menu {
+    &.simple {
+      li {
+        & + li {
+          margin-left: rem-calc(28);
+        }
+      }
+    }
+  }
 }
 
 @include breakpoint(xxlarge) {
   // Home page
+  .map {
+    height: rem-calc(950);
+  }
+}
+
+@include breakpoint(1800px) {
+  // Home page
+  .bg-elements {
+    position: relative;
+  }
+  .bg-element {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    &.bottom {
+      bottom: 0;
+    }
+    &.left {
+      left: 0;
+    }
+    &.right {
+      right: 0;
+    }
+  }
   .menus,
   .about {
     background-repeat: no-repeat, no-repeat;
   }
   .menus {
     background-image: url(../../assets/img/dishes/1.png), url(../../assets/img/dishes/2.png);
-    background-position: 100% 0, 0 100%;
+    background-position: right -70px top 13%, left -156px bottom 29%;
   }
   .about {
-    background-image: url(../../assets/img/dishes/3.png), url(../../assets/img/dishes/4.png);
-    background-position: 100% 0, 0 100%;
-  }
-  .map {
-    height: rem-calc(950);
+    background-image: url(../../assets/img/dishes/3.png);
+    background-position: right -130px top 25%;
+    .bg-element {
+      &.bottom {
+        bottom: -232px;
+      }
+      &.left {
+        left: -18px;
+      }
+    }
   }
 }

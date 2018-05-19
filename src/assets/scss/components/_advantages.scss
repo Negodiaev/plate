@@ -1,0 +1,27 @@
+.advantages {
+  background: #262323 url(../../assets/img/bg-advantages.jpg) 50% 50% no-repeat / cover;
+  .card {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+    border: 0;
+    border-radius: 4px;
+    background-color: rgba($white, 0.97);
+  }
+  .card-section {
+    padding-left: rem-calc(15);
+    padding-right: rem-calc(15);
+  }
+  .card-picture {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: rem-calc(123);
+    height: rem-calc(123);
+    border-radius: 50%;
+    background-image: linear-gradient(to top, #e79109 0%, #ffd800 100%);
+    box-shadow: 1px 0 0 rgba(124, 104, 13, 0.11);
+  }
+}

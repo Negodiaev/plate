@@ -1,2 +1,9 @@
 .about {
+  color: $dark-gray;
+  .section-title {
+    color: $body-font-color;
+  }
+  p {
+    line-height: unitless-calc(33, 16);
+  }
 }

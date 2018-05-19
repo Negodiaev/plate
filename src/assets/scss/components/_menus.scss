@@ -1,2 +1,22 @@
-.menus {
+.card-picture {
+  padding: rem-calc(5);
+  img {
+    width: 100%;
+  }
+}
+
+.card-info {
+  font-size: rem-calc(15);
+  line-height: unitless-calc(22, 15);
+  p {
+    line-height: unitless-calc(22, 15);
+  }
+}
+
+.card-title {
+  margin-bottom: rem-calc(13);
+  a {
+    border-bottom-width: 2px;
+    color: $body-font-color;
+  }
 }

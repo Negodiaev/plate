@@ -1,9 +1,87 @@
 .map-wrapper {
   position: relative;
+  height: rem-calc(400);
   .map-contacts {
     position: absolute;
-    top: 0;
+    top: rem-calc(30);
     left: 0;
     width: 100%;
   }
+}
+
+.map-picture {
+  position: absolute;
+  left: 50%;
+  width: auto;
+  max-width: none;
+  transform: translateX(-50%);
+}
+
+.map {
+  width: 100%;
+  height: rem-calc(700);
+}
+
+.map-address {
+  padding-top: rem-calc(33);
+  padding-bottom: rem-calc(37);
+  width: 100%;
+  border-radius: 0;
+  font-size: rem-calc(18);
+  font-weight: $global-weight-normal;
+  text-transform: none;
+  letter-spacing: 0;
+  user-select: none;
+  color: $anchor-color;
+  background-color: rgba($white, 0.85);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.21);
+  &:hover,
+  &:focus {
+    color: $anchor-color;
+    background-color: rgba($primary-color, 0.85);
+    box-shadow: none;
+    .text-info {
+      border-color: transparent;
+    }
+    &:focus {
+      font-size: rem-calc(20);
+      line-height: unitless-calc(18, 20);
+      font-weight: $global-weight-bold;
+      & + .map-address-info {
+        display: block;
+        margin-top: rem-calc(-25);
+      }
+    }
+  }
+  .text-info {
+    display: inline-block;
+    border-bottom: 1px solid $anchor-color;
+    transition: background-color 0.2s ease;
+  }
+  & + .map-address-info {
+    display: none;
+  }
+}
+
+.map-address-info {
+  position: absolute;
+  // width: 100%;
+  border: 10px solid rgba($primary-color, 0.85);
+  background-color: $white;
+  &:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #ffffff transparent;
+    transform: translateX(-50%);
+  }
+}
+
+.map-address-title {
+  margin-bottom: rem-calc(4);
 }

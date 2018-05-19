@@ -134,7 +134,7 @@ $header-styles: (
   small:
     (
       'h1': ('font-size': 30),
-      'h2': ('font-size': 22),
+      'h2': ('font-size': 26),
       'h3': ('font-size': 19),
       'h4': ('font-size': 18),
       'h5': ('font-size': 17),
@@ -143,7 +143,7 @@ $header-styles: (
   medium:
     (
       'h1': ('font-size': 50),
-      'h2': ('font-size': 34),
+      'h2': ('font-size': 36),
       'h3': ('font-size': 20),
       'h4': ('font-size': 19),
       'h5': ('font-size': 18),
@@ -180,7 +180,7 @@ $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
 $defnlist-term-margin-bottom: 0.3rem;
 $blockquote-color: $dark-gray;
-$blockquote-padding: rem-calc(9 20 0 19);
+$blockquote-padding: rem-calc(0 0 0 9);
 $blockquote-border: 5px solid $primary-color;
 $cite-font-size: rem-calc(13);
 $cite-color: $dark-gray;

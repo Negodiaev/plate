@@ -15,11 +15,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
   //------------------------------------------------------------------------//
   // Hero slider
   var heroSwiper = new Swiper('#hero-slider', {
-    slidesPerView: 1,
-    slidesPerGroup: 1,
     loop: true,
     autoHeight: true,
-    // loopFillGroupWithBlank: true,
     pagination: {
       el: '#hero-slider-pagination',
       clickable: true
@@ -34,10 +31,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
   // Companies slider
   var companiesSwiper = new Swiper('#companies-slider', {
     slidesPerView: 6,
-    slidesPerGroup: 1,
     loop: true,
-    autoHeight: true,
-    // loopFillGroupWithBlank: true,
+    loopedSlides: 6,
+    spaceBetween: 20,
     navigation: {
       nextEl: '#companies-slider-next',
       prevEl: '#companies-slider-prev'
@@ -49,16 +45,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
     breakpoints: {
       543: {
         // when window width is <= 543px
-        slidesPerView: 2,
-        slidesPerGroup: 2
+        slidesPerView: 2
       },
       763: {
-        slidesPerView: 3,
-        slidesPerGroup: 3
+        slidesPerView: 3
       },
       1023: {
-        slidesPerView: 4,
-        slidesPerGroup: 4
+        slidesPerView: 4
       }
     }
   });
@@ -68,10 +61,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
   // Reviews slider
   var reviewsSwiper = new Swiper('#reviews-slider', {
     slidesPerView: 3,
-    slidesPerGroup: 1,
     loop: true,
-    autoHeight: true,
-    // loopFillGroupWithBlank: true,
+    loopedSlides: 6,
+    spaceBetween: 20,
     navigation: {
       nextEl: '#reviews-slider-next',
       prevEl: '#reviews-slider-prev'
@@ -81,14 +73,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
       clickable: true
     },
     breakpoints: {
-      543: {
-        // when window width is <= 543px
-        slidesPerView: 1,
-        slidesPerGroup: 1
+      639: {
+        slidesPerView: 1
       },
       1023: {
-        slidesPerView: 2,
-        slidesPerGroup: 2
+        slidesPerView: 2
       }
     }
   });
