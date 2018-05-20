@@ -11,6 +11,7 @@
     height: rem-calc(300);
     height: 50vh;
     min-height: rem-calc(200);
+    background-attachment: initial;
   }
   .callback-phone {
     color: $white;
@@ -38,6 +39,7 @@
 }
 
 .content-card {
+  margin-bottom: rem-calc(20);
   padding: rem-calc(20 10);
   color: #575757;
   background-color: $white;

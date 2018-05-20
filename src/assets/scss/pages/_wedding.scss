@@ -1,0 +1,98 @@
+.wedding {
+  .hero {
+    background-image: url(../../assets/img/bg-wedding-hero.jpg);
+  }
+}
+
+.wedding-info {
+  .lead {
+    font-size: 1rem;
+  }
+}
+
+.receipt,
+.wedding-rules {
+  color: $dark-gray;
+}
+
+.receipt {
+  margin: 0 auto rem-calc(30);
+  padding: rem-calc(42 10);
+  width: rem-calc(215);
+  text-align: center;
+  background: linear-gradient(-135deg, #ffd200 13px, transparent 0) 0 13px,
+    linear-gradient(135deg, #ffd200 13px, #ffffff 0) 0 13px;
+  background-color: #ffd200;
+  background-size: 27px 20px;
+  background-repeat-y: no-repeat;
+  background-position: 0 100%;
+}
+
+.receipt-title {
+  margin-bottom: rem-calc(3);
+  font-size: rem-calc(30);
+  line-height: 1;
+}
+
+.receipt-details {
+  font-size: rem-calc(13);
+  line-height: unitless-calc(17, 13);
+}
+
+.wedding-rule {
+  display: flex;
+  margin-bottom: rem-calc(30);
+}
+
+.wedding-rule-picture {
+  flex: 0 0 rem-calc(70);
+  padding-top: rem-calc(10);
+  padding-right: rem-calc(10);
+  text-align: center;
+}
+
+.advert {
+  padding: rem-calc(10);
+  border: 8px solid #ffd200;
+  font-size: 1rem;
+  text-align: center;
+  background-color: $white;
+  .button {
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+  }
+}
+
+.advert-button {
+  letter-spacing: 0.1em;
+  background-color: #ffd200;
+  &:hover,
+  &:focus {
+    background-color: $button-background-hover;
+  }
+}
+
+.advert-phone,
+.advert-call-link {
+  color: $dark-gray;
+}
+
+.advert-phone {
+  margin-bottom: 1rem;
+  font-size: rem-calc(24);
+  line-height: 1;
+}
+
+.advert-call-link {
+  display: inline-block;
+  border: 0;
+  &:hover,
+  &:focus {
+    color: $body-font-color;
+  }
+}
+
+.wedding-about-button {
+  display: block;
+  margin: 0 auto rem-calc(20);
+}

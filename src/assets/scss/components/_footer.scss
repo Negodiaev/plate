@@ -47,6 +47,7 @@
     padding: rem-calc(5);
     border: 5px solid transparent;
     border-radius: 5px;
+    color: $white;
     &:hover {
       color: $body-font-color;
       border-color: $anchor-color-hover;
@@ -69,6 +70,7 @@
 .copyright {
   white-space: nowrap;
   a {
+    display: inline-block;
     border-color: $medium-gray;
     color: $medium-gray;
     &:hover,

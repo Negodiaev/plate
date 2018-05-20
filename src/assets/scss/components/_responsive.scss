@@ -1,5 +1,10 @@
 @include breakpoint(small only) {
   // Home page
+  .home {
+    .button {
+      letter-spacing: 0;
+    }
+  }
   .button {
     padding-left: 1em;
     padding-right: 1em;
@@ -51,9 +56,6 @@
 
 @include breakpoint(medium) {
   // Home page
-  .button {
-    letter-spacing: 0.1em;
-  }
   .section {
     padding-top: rem-calc(20);
     padding-bottom: rem-calc(20);
@@ -162,6 +164,31 @@
     .tabs-title {
       flex: 0 1 rem-calc(220);
     }
+  }
+
+  // Wedding page
+  .wedding-info {
+    font-size: rem-calc(18);
+    line-height: 1.5;
+    .lead {
+      font-size: rem-calc(18);
+      line-height: 1.5;
+    }
+  }
+  .wedding-rules {
+    padding-bottom: rem-calc(30);
+    & > .cell {
+      & + .cell {
+        border-left: 1px solid lightgrey;
+      }
+    }
+  }
+  .wedding-rule {
+    padding-top: rem-calc(30);
+    padding-bottom: rem-calc(10);
+  }
+  .advert {
+    padding: rem-calc(20);
   }
 }
 
@@ -327,6 +354,15 @@
         font-size: rem-calc(16);
       }
     }
+    .advantages {
+      padding-top: rem-calc(68);
+      .section-title {
+        margin-bottom: rem-calc(76);
+      }
+      .card {
+        max-width: rem-calc(340);
+      }
+    }
   }
   .content-card-title {
     font-size: rem-calc(30);
@@ -378,6 +414,99 @@
     .section-title {
       margin-bottom: rem-calc(50);
     }
+  }
+
+  // Wedding page
+  .wedding {
+    .advantages {
+      padding-bottom: rem-calc(70);
+      .card {
+        padding-bottom: rem-calc(14);
+        min-height: rem-calc(343);
+      }
+      .card-picture {
+        margin-bottom: rem-calc(12);
+      }
+    }
+    .feedback {
+      padding-top: rem-calc(96);
+      padding-bottom: rem-calc(22);
+      .slider-wrapper {
+        margin-bottom: 0;
+      }
+    }
+    .content-card {
+      margin: rem-calc(0 20 73);
+      padding: rem-calc(85 32 72 65);
+    }
+    .content-card-title {
+      margin-bottom: rem-calc(31);
+    }
+  }
+  .wedding-info {
+    padding-top: rem-calc(59);
+    font-size: rem-calc(22);
+    .section-title {
+      margin-bottom: rem-calc(41);
+    }
+    .lead {
+      margin-bottom: rem-calc(54);
+      font-size: rem-calc(22);
+    }
+  }
+  .receipt {
+    margin-bottom: rem-calc(85);
+  }
+  .wedding-rules {
+    margin-bottom: rem-calc(30);
+  }
+  .wedding-rule {
+    padding-top: rem-calc(83);
+    padding-bottom: rem-calc(40);
+    justify-content: center;
+  }
+  .wedding-rule-info {
+    max-width: rem-calc(360);
+  }
+  .advert {
+    margin: rem-calc(0 20 24);
+    padding-top: rem-calc(60);
+    padding-bottom: rem-calc(24);
+    border-width: 13px;
+    .section-title {
+      margin-bottom: rem-calc(34);
+    }
+    .button {
+      padding-left: rem-calc(64);
+      padding-right: rem-calc(64);
+    }
+  }
+  .advert-button {
+    margin-bottom: rem-calc(59);
+  }
+  .advert-phone {
+    font-size: rem-calc(34);
+  }
+  .wedding-about {
+    padding-bottom: rem-calc(76);
+    .section-title {
+      margin-bottom: rem-calc(72);
+    }
+    p {
+      &:last-of-type {
+        margin-bottom: rem-calc(70);
+      }
+    }
+  }
+  .wedding-about-pictures {
+    margin-bottom: rem-calc(51);
+  }
+  .wedding-about-button {
+    padding-left: rem-calc(40);
+    padding-right: rem-calc(40);
+  }
+  .wedding-notice-info {
+    padding-top: rem-calc(13);
   }
 }
 
@@ -554,6 +683,28 @@
           top: -173px;
           right: -140px;
           z-index: 3;
+        }
+      }
+    }
+  }
+  .wedding {
+    .advantages {
+      .bg-element {
+        &.top {
+          &.left {
+            top: -243px;
+            left: -17px;
+          }
+        }
+      }
+    }
+  }
+  .wedding-info {
+    .bg-element {
+      &.top {
+        &.right {
+          top: 204px;
+          right: -20px;
         }
       }
     }
