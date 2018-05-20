@@ -10,10 +10,30 @@
   .hero {
     height: rem-calc(300);
     height: 50vh;
-    min-width: rem-calc(200);
+    min-height: rem-calc(200);
   }
   .callback-phone {
     color: $white;
+  }
+  table {
+    tbody {
+      tr {
+        & + tr {
+          border-top: 1px solid #dbdbdb;
+        }
+      }
+    }
+    th,
+    td {
+      vertical-align: top;
+    }
+    th {
+      line-height: unitless-calc(25, 18);
+    }
+    td {
+      font-size: rem-calc(15);
+      line-height: unitless-calc(26, 16);
+    }
   }
 }
 

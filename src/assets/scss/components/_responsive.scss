@@ -36,6 +36,17 @@
   .copyright {
     font-size: rem-calc(14);
   }
+
+  // Inner page
+  .page {
+    table {
+      td {
+        &:first-child {
+          font-weight: 600;
+        }
+      }
+    }
+  }
 }
 
 @include breakpoint(medium) {
@@ -83,11 +94,6 @@
     .main-menu {
       padding-top: rem-calc(40);
       align-items: flex-start;
-      li {
-        & + li {
-          margin-left: 0;
-        }
-      }
     }
   }
   .footer-col {
@@ -138,6 +144,24 @@
   }
   .content-card-title {
     font-size: rem-calc(27);
+  }
+
+  // Offer page
+  .offer-program {
+    .tabs-content {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  .custom-tabs {
+    display: flex;
+    justify-content: space-between;
+    &:before,
+    &:after {
+      display: none;
+    }
+    .tabs-title {
+      flex: 0 1 rem-calc(220);
+    }
   }
 }
 
@@ -277,6 +301,32 @@
     .footer-col {
       min-height: rem-calc(252);
     }
+    table {
+      th,
+      td {
+        &:first-child {
+          width: rem-calc(380);
+        }
+        &:nth-child(2) {
+          padding-right: rem-calc(45);
+          width: rem-calc(460);
+        }
+        &:nth-child(3) {
+          width: rem-calc(120);
+        }
+        &:nth-child(4) {
+          width: rem-calc(180);
+        }
+      }
+      th {
+        padding: rem-calc(10 20 42);
+        font-size: rem-calc(18);
+      }
+      td {
+        padding: rem-calc(35 20 31);
+        font-size: rem-calc(16);
+      }
+    }
   }
   .content-card-title {
     font-size: rem-calc(30);
@@ -305,6 +355,29 @@
   }
   .content-card-title {
     margin-bottom: rem-calc(45);
+  }
+
+  // Offer page
+  .offer-program {
+    padding-top: rem-calc(64);
+    padding-bottom: rem-calc(70);
+    .section-title {
+      margin-bottom: rem-calc(63);
+    }
+    .tabs-content {
+      margin-bottom: rem-calc(66);
+      padding-top: rem-calc(35);
+    }
+    .tabs-panel {
+      padding-bottom: rem-calc(40);
+    }
+  }
+  .offer-info {
+    padding-top: rem-calc(67);
+    padding-bottom: rem-calc(81);
+    .section-title {
+      margin-bottom: rem-calc(50);
+    }
   }
 }
 
@@ -469,6 +542,17 @@
         &.right {
           top: -108px;
           right: -20px;
+          z-index: 3;
+        }
+      }
+    }
+  }
+  .offer-info {
+    .bg-element {
+      &.top {
+        &.right {
+          top: -173px;
+          right: -140px;
           z-index: 3;
         }
       }

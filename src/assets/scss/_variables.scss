@@ -212,16 +212,16 @@ $input-error-font-size: rem-calc(12);
 $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
-$accordion-background: $white;
+$accordion-background: #e9e9e9;
 $accordion-plusminus: true;
-$accordion-title-font-size: rem-calc(12);
-$accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
+$accordion-title-font-size: rem-calc(16);
+$accordion-item-color: $body-font-color;
+$accordion-item-background-hover: smart-scale($accordion-background, 2%);
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
-$accordion-content-color: $body-font-color;
-$accordion-content-padding: 1rem;
+$accordion-content-border: 0;
+$accordion-content-color: $dark-gray;
+$accordion-content-padding: rem-calc(20 10);
 // 8. Accordion Menu
 // -----------------
 $accordionmenu-padding: $global-menu-padding;
@@ -671,7 +671,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 // ---------
 $table-background: $white;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
+$table-border: 0;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
@@ -679,29 +679,29 @@ $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-h
 $table-is-striped: true;
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: transparent;
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
 $table-foot-background: smart-scale($table-background, $table-color-scale);
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
 $table-head-font-color: $body-font-color;
 $table-foot-font-color: $body-font-color;
 $show-header-for-stacked: false;
-$table-stack-breakpoint: medium;
+$table-stack-breakpoint: small;
 // 51. Tabs
 // --------
 $tab-margin: 0;
-$tab-background: $white;
-$tab-color: $primary-color;
-$tab-background-active: $light-gray;
-$tab-active-color: $primary-color;
-$tab-item-font-size: rem-calc(12);
-$tab-item-background-hover: $white;
-$tab-item-padding: 1.25rem 1.5rem;
+$tab-background: $light-gray;
+$tab-color: $body-font-color;
+$tab-background-active: $anchor-color-hover;
+$tab-active-color: $tab-color;
+$tab-item-font-size: rem-calc(16);
+$tab-item-background-hover: smart-scale($tab-background, 2%);
+$tab-item-padding: rem-calc(23 10 22);
 $tab-expand-max: 6;
 $tab-content-background: $white;
 $tab-content-border: $light-gray;
-$tab-content-color: $body-font-color;
-$tab-content-padding: 1rem;
+$tab-content-color: $dark-gray;
+$tab-content-padding: rem-calc(30 20 10);
 // 52. Thumbnail
 // -------------
 $thumbnail-border: solid 5px $white;
