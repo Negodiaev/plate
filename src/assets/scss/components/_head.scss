@@ -8,8 +8,8 @@
   padding: rem-calc(16 0 12);
   line-height: 1;
   color: $white;
-  background: url(../../assets/img/gradient-top.png) 50% 0 no-repeat;
-  // background-image: linear-gradient(rgba($black, 0.9), transparent);
+  background: url(../../assets/img/gradient-top.png) 50% 0 no-repeat / cover;
+  background-image: linear-gradient(rgba($black, 0.9), transparent);
   transition: background-color 0.15s ease-out, padding 0.15s linear;
   &.is-stuck {
     background-color: rgba($black, 0.7);

@@ -1,6 +1,11 @@
 .map-wrapper {
   position: relative;
   height: rem-calc(400);
+  img {
+    width: auto;
+    max-width: none;
+    height: 100%;
+  }
   .map-contacts {
     position: absolute;
     top: rem-calc(30);
@@ -22,9 +27,12 @@
   height: rem-calc(700);
 }
 
+.map-contact {
+  position: relative;
+}
+
 .map-address {
-  padding-top: rem-calc(33);
-  padding-bottom: rem-calc(37);
+  margin-bottom: 0;
   width: 100%;
   border-radius: 0;
   font-size: rem-calc(18);
@@ -47,7 +55,7 @@
       font-size: rem-calc(20);
       line-height: unitless-calc(18, 20);
       font-weight: $global-weight-bold;
-      & + .map-address-info {
+      & + .map-address-pane {
         display: block;
         margin-top: rem-calc(-25);
       }
@@ -58,14 +66,21 @@
     border-bottom: 1px solid $anchor-color;
     transition: background-color 0.2s ease;
   }
-  & + .map-address-info {
+  & + .map-address-pane {
     display: none;
   }
 }
 
+.map-address-pane {
+  padding: 0;
+  width: 100%;
+}
+
 .map-address-info {
   position: absolute;
-  // width: 100%;
+  padding-top: rem-calc(8);
+  padding-bottom: rem-calc(2);
+  width: 100%;
   border: 10px solid rgba($primary-color, 0.85);
   background-color: $white;
   &:before {
@@ -83,5 +98,5 @@
 }
 
 .map-address-title {
-  margin-bottom: rem-calc(4);
+  margin-bottom: rem-calc(10);
 }

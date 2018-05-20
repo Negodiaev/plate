@@ -20,11 +20,8 @@
     height: rem-calc(120);
   }
   .map-address {
-    padding-top: rem-calc(10);
-    padding-bottom: rem-calc(10);
-  }
-  .map-address-info {
-    width: 100%;
+    padding-top: rem-calc(16);
+    padding-bottom: rem-calc(16);
   }
   .footer {
     .logo {
@@ -120,12 +117,35 @@
     }
   }
   .map-address {
+    margin-bottom: rem-calc(20);
+    padding-top: rem-calc(33);
+    padding-bottom: rem-calc(37);
     letter-spacing: 0;
+  }
+  .map-address-info {
+    margin-top: rem-calc(-25);
+  }
+
+  // Inner page
+  .page {
+    .hero {
+      height: rem-calc(400);
+      height: 50vh;
+    }
+  }
+  .content-card {
+    padding: rem-calc(30 20);
+  }
+  .content-card-title {
+    font-size: rem-calc(27);
   }
 }
 
 @include breakpoint(large) {
   // Home page
+  p {
+    margin-bottom: rem-calc(28);
+  }
   .section-title {
     margin-bottom: rem-calc(54);
   }
@@ -178,7 +198,7 @@
       min-height: rem-calc(350);
     }
   }
-  .content {
+  .custom-list {
     li {
       margin-bottom: rem-calc(36);
     }
@@ -240,6 +260,51 @@
   }
   .scl-link {
     margin-bottom: 0;
+  }
+
+  // Inner page
+  .page {
+    .burger i {
+      background-color: $anchor-color-hover;
+    }
+    .hero {
+      height: rem-calc(550);
+      // height: 50vh;
+    }
+    .callback-phone {
+      color: $anchor-color-hover;
+    }
+    .footer-col {
+      min-height: rem-calc(252);
+    }
+  }
+  .content-card-title {
+    font-size: rem-calc(30);
+  }
+
+  // Offers page
+  .offers {
+    .menus {
+      padding-top: rem-calc(61);
+      padding-bottom: rem-calc(45);
+    }
+  }
+  .offers-info {
+    padding-top: rem-calc(82);
+    padding-bottom: rem-calc(108);
+    .content-card {
+      margin-left: rem-calc(20);
+      margin-right: rem-calc(20);
+    }
+  }
+  .content-card {
+    padding: rem-calc(87 76 45);
+    p {
+      max-width: rem-calc(980);
+    }
+  }
+  .content-card-title {
+    margin-bottom: rem-calc(45);
   }
 }
 
@@ -325,20 +390,24 @@
 
 @include breakpoint(xxlarge) {
   // Home page
-  .map {
-    height: rem-calc(950);
-  }
 }
 
 @include breakpoint(1800px) {
   // Home page
   .bg-elements {
     position: relative;
+    .grid-container {
+      position: relative;
+      z-index: 2;
+    }
   }
   .bg-element {
     position: absolute;
     display: block;
     z-index: 1;
+    &.top {
+      top: 0;
+    }
     &.bottom {
       bottom: 0;
     }
@@ -349,23 +418,59 @@
       right: 0;
     }
   }
-  .menus,
-  .about {
-    background-repeat: no-repeat, no-repeat;
-  }
   .menus {
-    background-image: url(../../assets/img/dishes/1.png), url(../../assets/img/dishes/2.png);
-    background-position: right -70px top 13%, left -156px bottom 29%;
+    .bg-element {
+      &.top {
+        &.right {
+          top: 84px;
+          right: -69px;
+        }
+      }
+      &.bottom {
+        &.left {
+          bottom: 185px;
+          left: -160px;
+        }
+      }
+    }
   }
   .about {
-    background-image: url(../../assets/img/dishes/3.png);
-    background-position: right -130px top 25%;
     .bg-element {
-      &.bottom {
-        bottom: -232px;
+      &.top {
+        &.right {
+          top: 162px;
+          right: -129px;
+        }
       }
-      &.left {
-        left: -18px;
+    }
+  }
+  .feedback {
+    .bg-element {
+      &.top {
+        &.left {
+          top: -156px;
+          left: -17px;
+        }
+      }
+    }
+  }
+
+  // Offers page
+  .offers {
+    .menus {
+      .bg-element {
+        display: none;
+      }
+    }
+  }
+  .offers-info {
+    .bg-element {
+      &.top {
+        &.right {
+          top: -108px;
+          right: -20px;
+          z-index: 3;
+        }
       }
     }
   }

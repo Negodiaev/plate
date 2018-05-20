@@ -100,9 +100,15 @@ svg {
 }
 
 .content {
-  ul {
-    padding-left: rem-calc(45);
+  blockquote {
+    margin-bottom: rem-calc(22);
+    font-size: rem-calc(25);
+    line-height: unitless-calc(33, 25);
   }
+}
+
+.custom-list {
+  padding-left: rem-calc(45);
   li {
     margin-bottom: 1rem;
     position: relative;
@@ -119,11 +125,6 @@ svg {
         50% 50% no-repeat;
       transform: translateY(-50%);
     }
-  }
-  blockquote {
-    margin-bottom: rem-calc(22);
-    font-size: rem-calc(25);
-    line-height: unitless-calc(33, 25);
   }
 }
 
