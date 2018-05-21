@@ -1,0 +1,49 @@
+.contacts {
+  .hero {
+    background-image: url(../../assets/img/bg-contacts-hero.jpg);
+  }
+}
+
+.contacts-content {
+  .map-wrapper {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+.contact {
+  padding: rem-calc(14);
+  border: 6px solid transparent;
+  color: $black;
+  background-color: $white;
+  &:hover,
+  &:focus,
+  &.active {
+    border-color: $anchor-color-hover;
+    color: $black;
+    background-color: $white;
+  }
+}
+
+.contact-title {
+  font-size: rem-calc(21);
+  font-weight: 600;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: rem-calc(15);
+  line-height: unitless-calc(22, 15);
+}
+
+.contact-details-col {
+  flex: 1 0 rem-calc(220);
+  padding-right: rem-calc(20);
+  &:not(:last-child) {
+    padding-bottom: 1rem;
+  }
+}
+
+.contact-details-title {
+  margin-bottom: rem-calc(4);
+}
