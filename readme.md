@@ -7,4 +7,5 @@
 * [Offer](https://negodiaev.github.io/plate/offer.html)
 * [Wedding](https://negodiaev.github.io/plate/wedding.html)
 * [News](https://negodiaev.github.io/plate/news.html)
-* [Contact](https://negodiaev.github.io/plate/contact.html)
+* [Contacts](https://negodiaev.github.io/plate/contacts.html)
+* [404](https://negodiaev.github.io/plate/404.html)

@@ -209,6 +209,21 @@
   .contact-title {
     font-size: rem-calc(22);
   }
+
+  // 404 page
+  .error-page {
+    .head {
+      padding-bottom: 0;
+      .logo {
+        max-width: rem-calc(186);
+      }
+    }
+  }
+  .error-content {
+    img {
+      margin-top: rem-calc(-27);
+    }
+  }
 }
 
 @include breakpoint(large) {
@@ -571,6 +586,29 @@
   }
   .contact-details-title {
     margin-bottom: rem-calc(7);
+  }
+
+  // 404 page
+  .error-page {
+    .head {
+      .logo {
+        margin-top: rem-calc(-54);
+        max-width: none;
+      }
+    }
+    .section-title {
+      margin-bottom: rem-calc(75);
+    }
+  }
+  .error-content {
+    padding-bottom: rem-calc(102);
+    .section-title {
+      font-size: rem-calc(47);
+      line-height: unitless-calc(58, 47);
+    }
+    img {
+      margin-left: rem-calc(-66);
+    }
   }
 }
 

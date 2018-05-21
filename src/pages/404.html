@@ -1,0 +1,57 @@
+<div class="error-page page off-canvas-wrapper">
+  <div class="side off-canvas position-left text-center" id="offCanvas" data-off-canvas>
+    {{> side}}
+  </div>
+  <!-- /.off-canvas -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="sticky-footer">
+      <div class="head-wrapper">
+        <header class="head">
+          <div class="error-page-container grid-container">
+            <div class="grid-x grid-padding-x">
+              <div class="cell small-8">
+                <div class="logo">
+                  <a href="/">
+                    <img src="assets/img/logo-error.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <!-- /.cell -->
+            </div>
+            <!-- /.grid-x -->
+          </div>
+          <!-- /.grid-container -->
+
+        </header>
+        <!-- /.head -->
+      </div>
+      <!-- /.head-wrapper -->
+      <main class="main">
+        <div class="error-content section">
+          <div class="error-page-container grid-container">
+            <div class="grid-x grid-padding-x align-middle">
+              <div class="cell medium-6 medium-order-2 large-5 text-center medium-text-left">
+                <img src="assets/img/404.png" alt="">
+              </div>
+              <!-- /.cell -->
+              <div class="cell medium-6 medium-order-1 large-7">
+                <h2 class="section-title">Такая страница отсутствует
+                  <br>на нашем сайте</h2>
+                <a href="#" class="button small">На главную</a>
+              </div>
+              <!-- /.cell -->
+            </div>
+            <!-- /.grid-x -->
+          </div>
+          <!-- /.grid-container -->
+        </div>
+        <!-- /.error-content -->
+      </main>
+      <!-- /.main -->
+      {{> page-footer}}
+    </div>
+    <!-- /.sticky-footer -->
+  </div>
+  <!-- /.off-canvas-content -->
+</div>
+<!-- /.off-canvas-wrapper -->

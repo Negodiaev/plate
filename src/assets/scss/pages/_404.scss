@@ -1,0 +1,22 @@
+.error-page {
+  .head-wrapper {
+    position: static;
+  }
+  .head {
+    background-image: none;
+    .logo {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.error-page-container {
+  max-width: rem-calc(1160);
+}
+
+.error-content {
+  .button {
+    padding: rem-calc(18 59 17);
+  }
+}
