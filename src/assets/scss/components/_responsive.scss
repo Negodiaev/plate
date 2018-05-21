@@ -190,6 +190,16 @@
   .advert {
     padding: rem-calc(20);
   }
+
+  // News page
+  .news-item {
+    margin-bottom: rem-calc(20);
+    padding: rem-calc(18 20 25);
+    img {
+      margin-top: rem-calc(7);
+      max-width: rem-calc(200);
+    }
+  }
 }
 
 @include breakpoint(large) {
@@ -507,6 +517,24 @@
   }
   .wedding-notice-info {
     padding-top: rem-calc(13);
+  }
+
+  // News page
+  .news-content {
+    padding-top: rem-calc(61);
+    padding-bottom: rem-calc(77);
+    .section-title {
+      margin-bottom: rem-calc(42);
+    }
+  }
+  .news-list {
+    margin-bottom: rem-calc(54);
+  }
+  .news-item {
+    margin-bottom: rem-calc(30);
+    img {
+      max-width: none;
+    }
   }
 }
 

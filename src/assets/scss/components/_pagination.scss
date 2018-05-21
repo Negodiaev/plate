@@ -1,0 +1,22 @@
+.pagination {
+  li {
+    width: rem-calc(40);
+    text-align: center;
+    line-height: 1;
+    font-weight: 600;
+    &.pagination-previous,
+    &.pagination-next {
+      width: rem-calc(10);
+      a {
+        padding: rem-calc(12 0);
+        color: #879495;
+        background-color: transparent;
+      }
+    }
+  }
+  a {
+    display: block;
+    border: 0;
+    background-color: $white;
+  }
+}

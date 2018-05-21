@@ -6,3 +6,4 @@
 * [Offers](https://negodiaev.github.io/plate/offers.html)
 * [Offer](https://negodiaev.github.io/plate/offer.html)
 * [Wedding](https://negodiaev.github.io/plate/wedding.html)
+* [News](https://negodiaev.github.io/plate/news.html)

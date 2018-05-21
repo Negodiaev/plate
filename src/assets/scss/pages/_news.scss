@@ -1,0 +1,18 @@
+.news-item {
+  padding: rem-calc(10);
+  color: #575757;
+  background-color: $white;
+}
+
+.news-item-title {
+  margin-bottom: rem-calc(12);
+  a {
+    display: inline-block;
+    border-bottom: 2px solid #9e9a99;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      color: $anchor-color;
+    }
+  }
+}

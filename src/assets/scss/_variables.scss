@@ -422,7 +422,7 @@ $label-radius: $global-radius;
 // 22. Media Object
 // ----------------
 $mediaobject-margin-bottom: $global-margin;
-$mediaobject-section-padding: $global-padding;
+$mediaobject-section-padding: rem-calc(20);
 $mediaobject-image-width-stacked: 100%;
 // 23. Menu
 // --------
@@ -479,18 +479,18 @@ $orbit-control-zindex: 10;
 // --------------
 $pagination-font-size: rem-calc(14);
 $pagination-margin-bottom: $global-margin;
-$pagination-item-color: $black;
-$pagination-item-padding: rem-calc(3 10);
-$pagination-item-spacing: rem-calc(1);
+$pagination-item-color: #494949;
+$pagination-item-padding: rem-calc(13 5);
+$pagination-item-spacing: rem-calc(6);
 $pagination-radius: $global-radius;
-$pagination-item-background-hover: $light-gray;
+$pagination-item-background-hover: #e9e9e9;
 $pagination-item-background-current: $primary-color;
-$pagination-item-color-current: $white;
+$pagination-item-color-current: $pagination-item-color;
 $pagination-item-color-disabled: $medium-gray;
 $pagination-ellipsis-color: $black;
 $pagination-mobile-items: false;
-$pagination-mobile-current-item: false;
-$pagination-arrows: true;
+$pagination-mobile-current-item: true;
+$pagination-arrows: false;
 // 28. Progress Bar
 // ----------------
 $progress-height: 1rem;
