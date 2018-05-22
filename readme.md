@@ -8,4 +8,5 @@
 * [Wedding](https://negodiaev.github.io/plate/wedding.html)
 * [News](https://negodiaev.github.io/plate/news.html)
 * [Contacts](https://negodiaev.github.io/plate/contacts.html)
+* [Cafe](https://negodiaev.github.io/plate/cafe.html)
 * [404](https://negodiaev.github.io/plate/404.html)

@@ -3,6 +3,10 @@
   display: block !important;
 }
 
+::selection {
+  background-color: rgba($primary-color, 0.8);
+}
+
 // html,
 // body,
 // .off-canvas-wrapper,

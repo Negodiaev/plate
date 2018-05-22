@@ -1,0 +1,56 @@
+.cafe {
+  .hero {
+    background-image: url(../../assets/img/bg-cafe-hero.jpg);
+  }
+  .advantages {
+    color: $body-font-color;
+    background-image: none;
+    .card {
+      box-shadow: none;
+    }
+  }
+}
+
+.work-item {
+  position: relative;
+  margin-bottom: rem-calc(10);
+  min-height: rem-calc(300);
+  border: 5px solid $white;
+  img {
+    width: 100%;
+  }
+}
+
+.work-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: rem-calc(228);
+  background-image: linear-gradient(to top, white 130px, transparent 100%);
+}
+
+.work-info-content {
+  padding: rem-calc(10 10 14);
+  // background-color: $white;
+  p {
+    margin-bottom: 0;
+    line-height: unitless-calc(25, 16);
+  }
+}
+
+.work-title {
+  margin-bottom: 0.5rem;
+}
+
+.clients-advantages {
+  background-color: $white;
+  .card-picture {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTk3LjM1IDE4NC45NSI+PGRlZnM+PGNsaXBQYXRoIGlkPSIzYTFiODlmMi0zNzc2LTRiZGMtOWE3ZS1jMzQ5NDc5NzNmYzEiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiPjxyZWN0IHdpZHRoPSIxOTcuMzUiIGhlaWdodD0iMTg0Ljk1IiBzdHlsZT0iZmlsbDpub25lIi8+PC9jbGlwUGF0aD48L2RlZnM+PHRpdGxlPmNpcmNsZS1jaGVjay1tYXJrPC90aXRsZT48ZyBpZD0iNDM4ZWE4ZjctNzBkZi00YzJkLTk0YWUtYTc5YTBlZjk0ZjAxIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSIxMmRkZTJhYy04MTk0LTRkZTQtYTk1NS0yNDRmNjBmYzEyZGEiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PGcgc3R5bGU9ImNsaXAtcGF0aDp1cmwoIzNhMWI4OWYyLTM3NzYtNGJkYy05YTdlLWMzNDk0Nzk3M2ZjMSkiPjxwYXRoIGQ9Ik0xOTQuMTEsMTFhMTEuMTQsMTEuMTQsMCwwLDAtMTUuNywwTDg5LDEwMC4zNmwtMjUtMjVhMTEuMSwxMS4xLDAsMCwwLTE1LjcsMTUuN0w4MSwxMjMuNzNsLjA4LjA3LjExLjEyYTExLjE0LDExLjE0LDAsMCwwLDE1LjcsMGw5Ny4yNS05Ny4yNGExMS4xNCwxMS4xNCwwLDAsMCwwLTE1LjcxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIiBzdHlsZT0iZmlsbDojNzdhMDA4Ii8+PHBhdGggZD0iTTE2NS4yOCw3OC41NmE3NC4yLDc0LjIsMCwxLDEtMzEuNzQtNDcuNzYsOS4xNiw5LjE2LDAsMCwwLDExLjU1LTEuMTdsMCwwYTkuMjEsOS4yMSwwLDAsMC0xLjQ1LTE0LjE4QTkyLjQ5LDkyLjQ5LDAsMCwwLDI3LjA5LDE1Ny44Nyw5Mi40OCw5Mi40OCwwLDAsMCwxODUsOTIuNDgsOTMuNCw5My40LDAsMCwwLDE4My4zMSw3NWE5LjE5LDkuMTksMCwxLDAtMTgsMy41NSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIgc3R5bGU9ImZpbGw6Izc3YTAwOCIvPjwvZz48L2c+PC9nPjwvc3ZnPg==)
+      no-repeat 50% 50% / 82px;
+    box-shadow: none;
+  }
+}

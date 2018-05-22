@@ -90,7 +90,19 @@
     }
   }
   .map-wrapper {
-    height: rem-calc(700);
+    position: relative;
+    .map-contacts {
+      position: absolute;
+      top: 0;
+      right: -10px;
+      width: rem-calc(300);
+    }
+  }
+  .map {
+    margin-bottom: 0;
+  }
+  .map-address {
+    letter-spacing: 0;
   }
   .footer {
     .main-menu {
@@ -123,15 +135,6 @@
         }
       }
     }
-  }
-  .map-address {
-    margin-bottom: rem-calc(20);
-    padding-top: rem-calc(33);
-    padding-bottom: rem-calc(37);
-    letter-spacing: 0;
-  }
-  .map-address-info {
-    margin-top: rem-calc(-25);
   }
 
   // Inner page
@@ -208,6 +211,11 @@
   // Contact page
   .contact-title {
     font-size: rem-calc(22);
+  }
+
+  // Cafe page
+  .work-item {
+    margin-bottom: rem-calc(20);
   }
 
   // 404 page
@@ -329,6 +337,31 @@
   }
   .review {
     padding: rem-calc(30 20 20);
+  }
+  .map-wrapper {
+    .map-contacts {
+      top: rem-calc(30);
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+  .map {
+    height: rem-calc(700);
+  }
+  .map-contact {
+    position: relative;
+  }
+  .map-address {
+    padding-top: rem-calc(33);
+    padding-bottom: rem-calc(37);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.21);
+  }
+  .map-address-pane {
+    position: absolute;
+  }
+  .map-address-info {
+    margin-top: rem-calc(-25);
   }
   .footer {
     .main-menu {
@@ -588,6 +621,49 @@
     margin-bottom: rem-calc(7);
   }
 
+  // Cafe page
+  .cafe {
+    .advantages {
+      padding-bottom: rem-calc(68);
+    }
+    .reasons-advantages {
+      padding-bottom: 0;
+    }
+    .offers-info {
+      padding-bottom: rem-calc(30);
+    }
+  }
+  .work {
+    padding-top: rem-calc(90);
+    padding-top: rem-calc(56);
+  }
+  .work-item {
+    margin-bottom: rem-calc(52);
+    &.large {
+      min-height: rem-calc(480);
+    }
+  }
+  .work-info-content {
+    padding-top: 0;
+    min-height: rem-calc(105);
+  }
+  .work-title {
+    font-size: rem-calc(22);
+    line-height: 1.5;
+  }
+  .clients-advantages {
+    .card {
+      padding-top: 0;
+      min-height: rem-calc(260);
+    }
+    .card-section {
+      flex-grow: 0;
+    }
+    .card-picture {
+      height: rem-calc(90);
+    }
+  }
+
   // 404 page
   .error-page {
     .head {
@@ -824,6 +900,16 @@
         &.right {
           top: 204px;
           right: -20px;
+        }
+      }
+    }
+  }
+  .about-advantages {
+    .bg-element {
+      &.top {
+        &.right {
+          // top: 204px;
+          // right: -20px;
         }
       }
     }
