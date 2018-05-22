@@ -25,12 +25,13 @@
     overflow: hidden;
   }
   &.scl-col {
+    padding-bottom: 0;
     background-color: #211c1c;
   }
 }
 
 .scl {
-  padding-bottom: rem-calc(10);
+  padding-bottom: rem-calc(32);
   color: $white;
 }
 

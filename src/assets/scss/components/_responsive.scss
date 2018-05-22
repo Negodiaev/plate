@@ -125,7 +125,7 @@
     align-items: center;
     flex-grow: 1;
     padding-top: rem-calc(40);
-    padding-bottom: rem-calc(6);
+    padding-bottom: rem-calc(28);
   }
   .scl-menu {
     &.simple {
@@ -908,8 +908,26 @@
     .bg-element {
       &.top {
         &.right {
-          // top: 204px;
-          // right: -20px;
+          top: -180px;
+          right: -100px;
+        }
+      }
+    }
+  }
+  .work {
+    .bg-element {
+      &.top {
+        &.left {
+          top: -140px;
+        }
+      }
+    }
+  }
+  .reasons-advantages {
+    .bg-element {
+      &.top {
+        &.right {
+          top: -170px;
         }
       }
     }
