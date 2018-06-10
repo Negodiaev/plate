@@ -1,0 +1,103 @@
+.franchise {
+  .head {
+    .logo {
+      margin: rem-calc(-16 0 0);
+    }
+  }
+  .hero {
+    background-image: url(../../assets/img/bg-advantages.jpg);
+  }
+  .hero-title {
+    background: url(../../assets/img/bg-franchise-title.png) no-repeat 50% 0;
+    background-size: contain;
+  }
+  .advantages {
+    background-color: $body-background;
+    background-image: none;
+    .card {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+.pluses-item-picture {
+  color: #f1ad05;
+}
+
+.profit-chart {
+  height: 200px;
+
+  background: url(../../assets/img/bg-profit.png) no-repeat 100% 0;
+  background-size: contain;
+}
+
+.profit-slider {
+  input {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.gallery-blocks {
+  a {
+    position: relative;
+    display: block;
+    border: 0;
+    &:before,
+    &:after {
+      position: absolute;
+    }
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-image: linear-gradient(to top, rgba(231, 145, 9, 0.83) 0%, rgba(255, 216, 0, 0.83) 100%);
+      transition: opacity 0.15s ease-out 0.1s;
+    }
+    &:after {
+      content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNSAzNiI+PHRpdGxlPm1hZ25pZmllcjwvdGl0bGU+PGcgaWQ9ImNmMTc4MmY5LWU2ZjAtNDJjMS04NDkwLWI5ZjUyOWIyNDY0NyIgZGF0YS1uYW1lPSJMYXllciAyIj48ZyBpZD0iZmU2MDIwNTAtNTk3Yy00MjdmLWJlY2MtMjM1Mjg0ZDM5MjgzIiBkYXRhLW5hbWU9IkxheWVyIDEiPjxwYXRoIGQ9Ik0zNC40NywzMi43OWwtOC42My04LjkxYTE0LjQzLDE0LjQzLDAsMCwwLDMuNDMtOS4zNEExNC42MSwxNC42MSwwLDEsMCwyMywyNi40NGw4LjY5LDlhMS45LDEuOSwwLDAsMCwyLjc1LTIuNjNabS0xOS44My0yOUExMC43NCwxMC43NCwwLDEsMSwzLjgyLDE0LjUzLDEwLjc5LDEwLjc5LDAsMCwxLDE0LjY0LDMuNzlaIiBzdHlsZT0iZmlsbDojZmZmIi8+PC9nPjwvZz48L3N2Zz4=);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: rem-calc(36);
+      transform: translate(-50%, -50%);
+      transition: width 0.1s ease-out;
+    }
+    &:hover {
+      &:before {
+        opacity: 1;
+        transition: opacity 0.15s ease-in;
+      }
+      &:after {
+        width: rem-calc(35);
+        transition: width 0.1s ease-in 0.1s;
+      }
+    }
+  }
+}
+
+.mockup {
+  .section-title {
+    font-family: AppetiteNew, serif;
+    font-size: rem-calc(78);
+    line-height: 1;
+  }
+  .section-subtitle {
+    font-family: NautilusPompilius, serif;
+    font-size: rem-calc(54);
+    line-height: unitless-calc(103, 54);
+  }
+}
+
+.franchise-contacts {
+  background-color: $primary-color;
+}
+
+.franchise-feedback {
+  background-color: $light-gray;
+}

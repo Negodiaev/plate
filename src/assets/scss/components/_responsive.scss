@@ -52,6 +52,15 @@
       }
     }
   }
+
+  // Franchise page
+  .franchise {
+    .head {
+      .callback {
+        margin-left: auto;
+      }
+    }
+  }
 }
 
 @include breakpoint(medium) {
@@ -216,6 +225,16 @@
   // Cafe page
   .work-item {
     margin-bottom: rem-calc(20);
+  }
+
+  // Franchise page
+  .franchise {
+    .head {
+      .logo {
+        margin-left: auto;
+        text-align: right;
+      }
+    }
   }
 
   // 404 page

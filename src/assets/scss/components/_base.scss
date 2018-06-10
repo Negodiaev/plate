@@ -90,6 +90,9 @@ svg {
   &.dark {
     background-color: #262323;
   }
+  &.light {
+    background-color: #fffbec;
+  }
   &.primary {
     background-color: $primary-color;
     background-image: linear-gradient(-40deg, #e79109 0%, #ffd800 100%);

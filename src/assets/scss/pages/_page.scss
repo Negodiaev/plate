@@ -1,4 +1,9 @@
 .page {
+  &.franchise {
+    .hero {
+      height: auto;
+    }
+  }
   .burger i {
     background-color: $white;
   }
