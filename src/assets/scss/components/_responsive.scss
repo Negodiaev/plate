@@ -148,6 +148,11 @@
 
   // Inner page
   .page {
+    &.franchise {
+      .hero {
+        padding-top: rem-calc(140);
+      }
+    }
     .hero {
       height: rem-calc(400);
       height: 50vh;
@@ -232,8 +237,83 @@
     .head {
       .logo {
         margin-left: auto;
+        max-width: 100%;
         text-align: right;
       }
+      .callback-phone {
+        display: inline-block;
+        margin-bottom: rem-calc(12);
+        font-size: rem-calc(28);
+        font-weight: $global-weight-bold;
+      }
+    }
+    .hero-content {
+      margin-bottom: rem-calc(20);
+    }
+    .hero-title {
+      margin-top: rem-calc(-60);
+      padding-top: rem-calc(20);
+      padding-bottom: rem-calc(35);
+      max-width: rem-calc(590);
+      font-size: rem-calc(25);
+    }
+    .hero-subtitle {
+      font-size: rem-calc(21);
+    }
+    .hero-content-title {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: rem-calc(20);
+      padding-top: rem-calc(40);
+      padding-bottom: rem-calc(40);
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 15%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .content-title-part {
+      flex-basis: 50%;
+      padding-left: rem-calc(20);
+      padding-right: rem-calc(20);
+      &.right {
+        padding-left: rem-calc(40);
+      }
+    }
+  }
+  .banner-title {
+    font-size: rem-calc(40);
+  }
+  .pluses-item {
+    margin-bottom: rem-calc(20);
+    height: rem-calc(157);
+  }
+  .tariff-title {
+    font-size: rem-calc(16);
+  }
+  .tariff-subtitle {
+    font-size: rem-calc(15);
+  }
+  .franchise-pluses {
+    .pluses-item {
+      margin-bottom: rem-calc(15);
+      height: rem-calc(112);
+    }
+  }
+  .franchise-contact {
+    .franchise-contact-phone {
+      font-size: rem-calc(30);
+    }
+  }
+  .mockup {
+    .section-title {
+      font-size: rem-calc(56);
+    }
+    .section-subtitle {
+      font-size: rem-calc(42);
     }
   }
 
@@ -401,6 +481,48 @@
 
   // Inner page
   .page {
+    &.franchise {
+      .hero {
+        padding-top: rem-calc(228);
+        padding-bottom: rem-calc(50);
+      }
+      .advantages {
+        .section-title {
+          margin-bottom: rem-calc(45);
+        }
+        .blocks {
+          max-width: rem-calc(1260);
+        }
+      }
+      .pluses {
+        .section-title {
+          margin-bottom: rem-calc(60);
+        }
+      }
+      .profit {
+        .section-title {
+          margin-bottom: rem-calc(126);
+        }
+      }
+      .profit-inner {
+        max-width: rem-calc(1260);
+      }
+      .franchise-pluses {
+        .section-title {
+          margin-bottom: rem-calc(90);
+        }
+      }
+      .video {
+        .section-title {
+          margin-bottom: rem-calc(88);
+        }
+      }
+      .mockup {
+        .section-title {
+          margin-bottom: rem-calc(15);
+        }
+      }
+    }
     .burger i {
       background-color: $anchor-color-hover;
     }
@@ -683,6 +805,210 @@
     }
   }
 
+  // Franchise page
+  .franchise {
+    .section {
+      padding-top: rem-calc(52);
+      padding-bottom: rem-calc(55);
+    }
+    .head {
+      padding-top: rem-calc(36);
+      .logo {
+        margin-top: 0;
+        padding-right: rem-calc(45);
+      }
+      .callback {
+        padding-top: rem-calc(20);
+        padding-left: rem-calc(38);
+      }
+      .callback-phone {
+        color: $white;
+      }
+    }
+    .hero-content {
+      margin-bottom: rem-calc(32);
+    }
+    .hero-title {
+      margin-top: rem-calc(-95);
+      margin-bottom: rem-calc(70);
+    }
+    .hero-content-title {
+      position: relative;
+      margin: rem-calc(0 -20 95);
+      padding-top: rem-calc(57);
+      padding-bottom: rem-calc(52);
+      font-size: rem-calc(24);
+      &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 14px 20px 0 0;
+        border-color: #ff9500 transparent transparent transparent;
+      }
+      img {
+        max-width: none;
+      }
+    }
+    .content-title-part {
+      &.right {
+        padding-left: rem-calc(75);
+      }
+    }
+    .banner {
+      padding-top: rem-calc(80);
+      padding-bottom: rem-calc(100);
+    }
+    .pluses {
+      padding-bottom: rem-calc(75);
+    }
+    .tariffs {
+      padding-top: rem-calc(115);
+      padding-bottom: rem-calc(60);
+    }
+    .profit {
+      padding-top: rem-calc(77);
+      padding-bottom: rem-calc(80);
+    }
+    .franchise-pluses {
+      padding-bottom: rem-calc(38);
+    }
+    .gallery,
+    .video {
+      padding-bottom: rem-calc(70);
+    }
+    .video {
+      padding-top: rem-calc(63);
+    }
+    .mockup {
+      padding-top: rem-calc(132);
+      padding-bottom: 0;
+    }
+  }
+  .banner-title {
+    font-size: rem-calc(55);
+  }
+  .tariffs {
+    .section-title {
+      margin-bottom: rem-calc(85);
+    }
+  }
+  .tariff-heading {
+    padding-top: rem-calc(40);
+    padding-bottom: rem-calc(20);
+  }
+  .tariff-title {
+    margin-bottom: rem-calc(6);
+    font-size: rem-calc(26);
+  }
+  .tariff-subtitle {
+    font-size: rem-calc(20);
+  }
+  .tariff-content {
+    padding: rem-calc(35 26 10);
+    li {
+      padding-top: rem-calc(15);
+      padding-bottom: rem-calc(15);
+      background-position: 0 18px;
+    }
+  }
+  .profit-content {
+    padding-top: rem-calc(24);
+    padding-bottom: rem-calc(40);
+  }
+  .profit-info {
+    padding-top: rem-calc(28);
+    padding-left: rem-calc(50);
+  }
+  .profit-slider {
+    padding-top: rem-calc(16);
+    .slider {
+      margin-bottom: rem-calc(70);
+    }
+    .slider-values {
+      font-size: rem-calc(20);
+    }
+  }
+  .slider-sum {
+    margin-bottom: rem-calc(45);
+    font-size: rem-calc(40);
+  }
+  .profit-button {
+    padding-left: rem-calc(26);
+    padding-right: rem-calc(26);
+    font-size: rem-calc(15);
+  }
+  .profit-chart {
+    padding-left: rem-calc(28);
+    padding-right: rem-calc(10);
+  }
+  .video {
+    .responsive-embed {
+      padding-bottom: 0;
+      height: rem-calc(480);
+    }
+  }
+  .video-content {
+    margin: 0 auto;
+    max-width: rem-calc(854);
+  }
+  .franchise-footer-col {
+    padding-top: rem-calc(56);
+    padding-bottom: rem-calc(42);
+  }
+  .franchise-contacts-content {
+    margin-left: auto;
+    padding: rem-calc(0 10);
+    max-width: rem-calc(455);
+  }
+  .franchise-contacts-list {
+    padding-right: rem-calc(12);
+    li {
+      padding-top: rem-calc(23);
+      padding-bottom: rem-calc(23);
+    }
+  }
+  .franchise-contact {
+    .franchise-contact-phone {
+      margin-top: rem-calc(10);
+      font-size: rem-calc(45);
+    }
+  }
+  .franchise-feedback {
+    .franchise-contact-title {
+      margin-bottom: rem-calc(33);
+      padding-top: rem-calc(23);
+    }
+  }
+  .franchise-rights {
+    padding-top: rem-calc(25);
+    padding-bottom: rem-calc(35);
+  }
+  .franchise-rights-content {
+    max-width: rem-calc(1240);
+  }
+  .mockup {
+    .section-title {
+      font-size: rem-calc(78);
+    }
+    .section-subtitle {
+      font-size: rem-calc(54);
+    }
+  }
+  .mockup-picture {
+    position: relative;
+    top: rem-calc(50);
+    z-index: 20;
+    margin: rem-calc(-115 0 0 -84);
+    img {
+      position: relative;
+      top: rem-calc(10);
+    }
+  }
+
   // 404 page
   .error-page {
     .head {
@@ -703,6 +1029,23 @@
     }
     img {
       margin-left: rem-calc(-66);
+    }
+  }
+}
+
+@include breakpoint(1200px) {
+  // Franchise page
+  .franchise-feedback {
+    input,
+    textarea {
+      padding-left: rem-calc(26);
+    }
+    textarea {
+      max-width: rem-calc(380);
+      min-height: rem-calc(185);
+    }
+    .button {
+      margin-left: 0;
     }
   }
 }
@@ -745,6 +1088,11 @@
       padding-left: rem-calc(20);
       border-left: 1px solid #dfdfdf;
     }
+  }
+
+  // Franchise page
+  .profit-content {
+    box-shadow: 9px 31px 65px rgba(0, 0, 1, 0.13);
   }
 }
 
@@ -801,6 +1149,12 @@
         }
       }
     }
+  }
+
+  // Franchise-page
+  .franchise-feedback-content {
+    padding-left: rem-calc(56);
+    max-width: rem-calc(800);
   }
 }
 
@@ -947,6 +1301,80 @@
       &.top {
         &.right {
           top: -170px;
+        }
+      }
+    }
+  }
+  .franchise {
+    .banner {
+      padding-bottom: rem-calc(250);
+    }
+  }
+  .banner {
+    .bg-element {
+      &.top {
+        &.left {
+          top: -155px;
+          left: -85px;
+          max-width: 426px;
+        }
+        &.right {
+          top: -30px;
+          right: -20px;
+        }
+      }
+    }
+  }
+  .pluses {
+    &.bg-elements {
+      padding-top: rem-calc(165);
+    }
+    .bg-element {
+      &.top {
+        &.center {
+          top: -180px;
+          left: 50%;
+          transform: translateX(-40%);
+        }
+      }
+    }
+  }
+  .tariffs {
+    .bg-element {
+      &.top {
+        &.left {
+          top: -120px;
+          left: -17px;
+        }
+      }
+    }
+  }
+  .profit {
+    .bg-element {
+      &.top {
+        &.right {
+          top: -110px;
+          right: -20px;
+        }
+      }
+    }
+  }
+  .video {
+    .bg-element {
+      &.top {
+        &.left {
+          top: -90px;
+          left: -17px;
+        }
+      }
+    }
+  }
+  .mockup {
+    .bg-element {
+      &.top {
+        &.right {
+          top: -95px;
+          right: -20px;
         }
       }
     }

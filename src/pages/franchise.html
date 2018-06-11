@@ -39,26 +39,26 @@
       <!-- /.head-wrapper -->
       <main class="main">
         <div class="hero text-center">
-          <div class="hero-slide-inner">
-            <div class="grid-container">
-              <div class="grid-x align-middle">
-                <div class="cell medium-10 medium-offset-1">
-                  <div class="hero-content">
-                    <div class="hero-title">Франшиза кафе «Тарелка»</div>
-                    <div class="hero-content-title">Заработай
-                      <img src="assets/img/franchise-years.png" alt=""> миллиона в год</div>
-                    <div class="hero-subtitle">в сфере питания</div>
+          <div class="grid-container">
+            <div class="grid-x align-middle">
+              <div class="cell large-10 large-offset-1">
+                <div class="hero-content">
+                  <div class="hero-title">Франшиза кафе «Тарелка»</div>
+                  <div class="hero-content-title">
+                    <div class="content-title-part">Заработай</div>
+                    <img src="assets/img/franchise-years.png" alt="">
+                    <div class="content-title-part right">миллиона в год</div>
                   </div>
-                  <!-- /.hero-content -->
-                  <button class="button">Заказать звонок</button>
+                  <div class="hero-subtitle">в сфере питания</div>
                 </div>
-                <!-- /.cell -->
+                <!-- /.hero-content -->
+                <button class="hero-button button">Заказать звонок</button>
               </div>
-              <!-- /.grid-x -->
+              <!-- /.cell -->
             </div>
-            <!-- /.grid-container -->
+            <!-- /.grid-x -->
           </div>
-          <!-- /.hero-slide-inner -->
+          <!-- /.grid-container -->
           <div class="grid-container">
             <div class="hero-picture">
               <img src="assets/img/cook.png" class="show-for-xlarge" alt="">
@@ -155,15 +155,15 @@
         <!-- /.advantages -->
         <div class="banner section primary text-center bg-elements">
           <div class="grid-container">
-            <div class="banner-title">Хорошее обслуживание и вкусная еда в кафе «Тарелка» есть всегда!</div>
+            <div class="banner-title">Хорошее обслуживание и вкусная еда
+              <br>в кафе «Тарелка» есть всегда!</div>
           </div>
           <!-- /.grid-container -->
           <img src="assets/img/dishes/2.png" class="bg-element top left" alt="">
           <img src="assets/img/dishes/12.png" class="bg-element top right" alt="">
-          <img src="assets/img/dishes/13.png" class="bg-element bottom center" alt="">
         </div>
         <!-- /.banner -->
-        <div class="pluses section">
+        <div class="pluses section bg-elements">
           <div class="section-title h2 text-center">Плюсы сферы питания</div>
           <div class="food-blocks blocks grid-container">
             <div class="grid-x grid-padding-x medium-up-2 large-up-3 align-center">
@@ -307,6 +307,7 @@
             <!-- /.grid-x -->
           </div>
           <!-- /.grid-container -->
+          <img src="assets/img/dishes/13.png" class="bg-element top center" alt="">
         </div>
         <!-- /.pluses -->
         <div class="tariffs section light bg-elements">
@@ -314,7 +315,7 @@
             <div class="section-title h2 text-center">Пакеты франшизы кафе «Тарелка»</div>
             <div class="grid-x grid-padding-x" data-equalizer="tariffs" data-equalize-on="medium">
               <div class="cell medium-4">
-                <div class="tariff card" data-equalizer-watch="tariffs">
+                <div class="tariff standard card" data-equalizer-watch="tariffs">
                   <div class="tariff-heading">
                     <div class="tariff-title">Стандарт</div>
                     <div class="tariff-subtitle">350 тыс. руб.</div>
@@ -336,7 +337,7 @@
               </div>
               <!-- /.cell -->
               <div class="cell medium-4">
-                <div class="tariff card" data-equalizer-watch="tariffs">
+                <div class="tariff exclusive card" data-equalizer-watch="tariffs">
                   <div class="tariff-heading">
                     <div class="tariff-title">Эксклюзив</div>
                     <div class="tariff-subtitle">700 тыс. руб.</div>
@@ -361,7 +362,7 @@
               </div>
               <!-- /.cell -->
               <div class="cell medium-4">
-                <div class="tariff card" data-equalizer-watch="tariffs">
+                <div class="tariff business card" data-equalizer-watch="tariffs">
                   <div class="tariff-heading">
                     <div class="tariff-title">Бизнес под ключ</div>
                     <div class="tariff-subtitle">900 тыс. руб.</div>
@@ -387,15 +388,15 @@
             <!-- /.grid-x -->
           </div>
           <!-- /.grid-container -->
-          <img src="assets/img/dishes/2.png" class="bg-element top left" alt="">
+          <img src="assets/img/dishes/14.png" class="bg-element top left" alt="">
         </div>
         <!-- /.tariffs -->
-        <div class="profit">
-          <div class="grid-container">
+        <div class="profit section bg-elements">
+          <div class="profit-inner grid-container">
             <div class="section-title h2 text-center">Ваша прибыль</div>
-            <div class="grid-x grid-padding-x">
+            <div class="profit-content grid-x grid-padding-x">
               <div class="cell">
-                <div class="grid-x">
+                <div class="grid-x grid-padding-x">
                   <div class="cell medium-6">
                     <div class="profit-info">
                       <div class="profit-info-title h4">Количество посадочных мест</div>
@@ -407,7 +408,7 @@
                         </div>
                         <div class="slider" data-slider data-start="10" data-end="200" data-initial-start="181">
                           <span class="slider-handle" data-slider-handle role="slider" aria-controls="profit-slider-value" tabindex="1">
-                            <input type="text" id="profit-slider-value">
+                            <input type="text" id="profit-slider-value" disabled>
                           </span>
                           <span class="slider-fill" data-slider-fill></span>
                         </div>
@@ -421,7 +422,9 @@
                   </div>
                   <!-- /.cell -->
                   <div class="cell medium-6">
-                    <div class="profit-chart"></div>
+                    <div class="profit-chart">
+                      <img src="assets/img/bg-profit.png" alt="">
+                    </div>
                   </div>
                   <!-- /.cell -->
                 </div>
@@ -432,12 +435,12 @@
             <!-- /.grid-x -->
           </div>
           <!-- /.grid-container -->
-          <img src="assets/img/dishes/2.png" class="bg-element top right" alt="">
+          <img src="assets/img/dishes/15.png" class="bg-element top right" alt="">
         </div>
         <!-- /.profit -->
-        <div class="pluses section">
+        <div class="franchise-pluses pluses section">
           <div class="section-title h2 text-center">Плюсы нашей франшизы</div>
-          <div class="franchise-blocks blocks grid-container">
+          <div class="blocks grid-container">
             <div class="grid-x grid-padding-x medium-up-2 align-center">
               <div class="cell">
                 <div class="pluses-item">
@@ -646,13 +649,18 @@
         <div class="video section light bg-elements">
           <div class="grid-container">
             <div class="section-title h2 text-center">Как мы работаем</div>
-            <div class="cell large-10 large-offset-1">
-              <div class="responsive-embed">
-                <iframe width="854" height="480" src="https://www.youtube.com/embed/rc4kmCVzIbY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
-                  allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="grid-x grid-padding-x">
+              <div class="cell medium-10 medium-offset-1">
+                <div class="video-content">
+                  <div class="responsive-embed">
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/rc4kmCVzIbY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+                      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </div>
+                </div>
               </div>
+              <!-- /.cell -->
             </div>
-            <!-- /.cell -->
+            <!-- /.grid-x -->
           </div>
           <!-- /.grid-container -->
           <img src="assets/img/dishes/16.png" class="bg-element top left" alt="">
@@ -664,69 +672,90 @@
             <div class="section-subtitle">бизнес со вкусом!</div>
           </div>
           <!-- /.grid-container -->
-          <img src="assets/img/mockup.png" alt="">
+          <div class="mockup-picture show-for-large">
+            <img src="assets/img/mockup.png" alt="">
+          </div>
           <img src="assets/img/dishes/17.png" class="bg-element top right" alt="">
         </div>
         <!-- /.mockup -->
       </main>
       <!-- /.main -->
       <footer class="footer">
-        <div class="grid-x">
-          <div class="franchise-feedback cell large-8 large-order-2">
-            <div class="franchise-contact-title">Остались вопросы?</div>
-            <form>
-              <input type="text" placeholder="Ваше имя">
-              <input type="text" placeholder="Ваш телефон">
-              <input type="text" placeholder="Ваш e-mail">
-              <textarea cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
-              <button type="button" class="button">Отправить</button>
-            </form>
+        <div class="grid-x grid-padding-x">
+          <div class="franchise-feedback franchise-footer-col cell medium-7 medium-order-2">
+            <div class="franchise-feedback-content">
+              <div class="franchise-contact-title">Остались вопросы?</div>
+              <form>
+                <div class="grid-x grid-padding-x">
+                  <div class="cell xlarge-5">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш телефон">
+                    <input type="text" placeholder="Ваш e-mail">
+                  </div>
+                  <!-- /.cell -->
+                  <div class="cell xlarge-7">
+                    <textarea cols="30" rows="7" placeholder="Ваш комментарий"></textarea>
+                  </div>
+                  <!-- /.cell -->
+                </div>
+                <!-- /.grid-x -->
+                <button type="button" class="button">Отправить</button>
+              </form>
+            </div>
+            <!-- /.franchise-feedback-content -->
           </div>
           <!-- /.cell -->
-          <div class="franchise-contacts cell large-4 large-order-1">
-            <ul class="franchise-contacts-list">
-              <li>
-                <div class="franchise-contact">
-                  <div class="franchise-contact-title">Звоните</div>
-                  <a href="tel:+78007585256" class="franchise-contact-phone">8&nbsp;800&nbsp;758&nbsp;52&nbsp;56</a>
-                </div>
-              </li>
-              <li>
-                <div class="franchise-contact">
-                  <div class="franchise-contact-title">Пишите</div>
-                  <a href="mailto:mail@ask.me">mail@ask.me</a>
-                </div>
-              </li>
-              <li>
-                <div class="franchise-contact">
-                  <div class="franchise-contact-title">Наш сайт:</div>
-                  <a href="#">ask.me</a>
-                </div>
-              </li>
-            </ul>
+          <div class="franchise-contacts franchise-footer-col cell medium-5 medium-order-1">
+            <div class="franchise-contacts-content">
+              <ul class="franchise-contacts-list">
+                <li>
+                  <div class="franchise-contact">
+                    <div class="franchise-contact-title">Звоните</div>
+                    <a href="tel:+78007585256" class="franchise-contact-phone">8&nbsp;800&nbsp;758&nbsp;52&nbsp;56</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="franchise-contact">
+                    <div class="franchise-contact-title">Пишите</div>
+                    <a href="mailto:mail@ask.me">mail@ask.me</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="franchise-contact">
+                    <div class="franchise-contact-title">Наш сайт:</div>
+                    <a href="#">ask.me</a>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+            <!-- /.franchise-contacts-content -->
           </div>
           <!-- /.cell -->
         </div>
         <!-- /.grid-x -->
-        <div class="grid-container">
-          <div class="grid-x grid-padding-x text-center medium-text-left">
-            <div class="cell medium-6">
-              <div class="copyright">ООО, КафеТарелка, ИНН: 845156784 (с)</div>
-            </div>
-            <!-- /.cell -->
-            <div class="cell medium-6 medium-text-right">
-              <div class="copyright">Разработан в
-                <a href="#">Рецепты Рекламы</a>
+        <div class="franchise-rights">
+          <div class="franchise-rights-content grid-container">
+            <div class="grid-x grid-padding-x text-center medium-text-left">
+              <div class="cell medium-6">
+                <div class="copyright">ООО, КафеТарелка, ИНН: 845156784 (с)</div>
               </div>
+              <!-- /.cell -->
+              <div class="cell medium-6 medium-text-right">
+                <div class="copyright">Разработан в
+                  <a href="#">Рецепты Рекламы</a>
+                </div>
+              </div>
+              <!-- /.cell -->
             </div>
-            <!-- /.cell -->
+            <!-- /.grid-x -->
+            <div class="footer-picture">
+              <img src="assets/img/cook.png" class="show-for-xlarge" alt="">
+            </div>
           </div>
-          <!-- /.grid-x -->
-          <div class="footer-picture">
-            <img src="assets/img/cook.png" class="show-for-xlarge" alt="">
-          </div>
+          <!-- /.grid-container -->
         </div>
-        <!-- /.grid-container -->
+        <!-- /.franchise-rights -->
       </footer>
       <!-- /.footer -->
     </div>

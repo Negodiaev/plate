@@ -71,9 +71,9 @@ $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #ffde00,
   secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37
+  success: #82be00,
+  warning: #ff9c00,
+  alert: #eb0000
 );
 $light-gray: #f8f8f8;
 $medium-gray: #5a4f4a;
@@ -131,25 +131,60 @@ $header-color: inherit;
 $header-lineheight: 1.4;
 $header-margin-bottom: 1rem;
 $header-styles: (
-  small:
-    (
-      'h1': ('font-size': 30),
-      'h2': ('font-size': 26),
-      'h3': ('font-size': 19),
-      'h4': ('font-size': 18),
-      'h5': ('font-size': 17),
-      'h6': ('font-size': 16)
+  small: (
+    'h1': (
+      'font-size': 30
     ),
-  medium:
-    (
-      'h1': ('font-size': 50),
-      'h2': ('font-size': 36),
-      'h3': ('font-size': 20),
-      'h4': ('font-size': 19),
-      'h5': ('font-size': 18),
-      'h6': ('font-size': 16)
+    'h2': (
+      'font-size': 26
     ),
-  large: ('h1': ('font-size': 70), 'h2': ('font-size': 45), 'h3': ('font-size': 21), 'h4': ('font-size': 20))
+    'h3': (
+      'font-size': 19
+    ),
+    'h4': (
+      'font-size': 18
+    ),
+    'h5': (
+      'font-size': 17
+    ),
+    'h6': (
+      'font-size': 16
+    )
+  ),
+  medium: (
+    'h1': (
+      'font-size': 50
+    ),
+    'h2': (
+      'font-size': 36
+    ),
+    'h3': (
+      'font-size': 20
+    ),
+    'h4': (
+      'font-size': 19
+    ),
+    'h5': (
+      'font-size': 18
+    ),
+    'h6': (
+      'font-size': 16
+    )
+  ),
+  large: (
+    'h1': (
+      'font-size': 70
+    ),
+    'h2': (
+      'font-size': 45
+    ),
+    'h3': (
+      'font-size': 21
+    ),
+    'h4': (
+      'font-size': 20
+    )
+  )
 );
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 93.75%;
@@ -376,7 +411,7 @@ $fieldset-border: 1px solid $medium-gray;
 $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
-$form-spacing: rem-calc(16);
+$form-spacing: rem-calc(18);
 $helptext-color: $black;
 $helptext-font-size: rem-calc(13);
 $helptext-font-style: italic;
@@ -392,24 +427,24 @@ $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
 $input-color: $black;
-$input-placeholder-color: $medium-gray;
+$input-placeholder-color: $black;
 $input-font-family: inherit;
-$input-font-size: rem-calc(16);
+$input-font-size: rem-calc(14);
 $input-font-weight: $global-weight-normal;
 $input-line-height: $global-lineheight;
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid $dark-gray;
-$input-padding: $form-spacing / 2;
-$input-shadow: inset 0 1px 2px rgba($black, 0.1);
-$input-shadow-focus: 0 0 5px $medium-gray;
-$input-cursor-disabled: not-allowed;
-$input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+$input-border: 1px solid #d4d4d4;
+$input-border-focus: 1px solid #d4d4d4;
+$input-padding: rem-calc(15);
+$input-shadow: 0;
+$input-shadow-focus: 0 0 10px rgba($black, 0.1);
+$input-cursor-disabled: default;
+$input-transition: box-shadow 0.2s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
-$input-radius: $global-radius;
-$form-button-radius: $global-radius;
+$input-radius: 25px;
+$form-button-radius: 25;
 // 21. Label
 // ---------
 $label-background: $primary-color;
@@ -447,8 +482,12 @@ $meter-fill-medium: $warning-color;
 $meter-fill-bad: $alert-color;
 // 25. Off-canvas
 // --------------
-$offcanvas-sizes: (small: 250px);
-$offcanvas-vertical-sizes: (small: 250px);
+$offcanvas-sizes: (
+  small: 250px
+);
+$offcanvas-vertical-sizes: (
+  small: 250px
+);
 $offcanvas-background: $light-gray;
 $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
 $offcanvas-inner-shadow-size: 20px;
@@ -500,12 +539,7 @@ $progress-meter-background: $primary-color;
 $progress-radius: $global-radius;
 // 29. Prototype Arrow
 // -------------------
-$prototype-arrow-directions: (
-  down,
-  up,
-  right,
-  left
-);
+$prototype-arrow-directions: (down, up, right, left);
 $prototype-arrow-size: 0.4375rem;
 $prototype-arrow-color: $black;
 // 30. Prototype Border-Box
@@ -523,13 +557,7 @@ $prototype-border-color: $medium-gray;
 // 33. Prototype Display
 // ---------------------
 $prototype-display-breakpoints: $global-prototype-breakpoints;
-$prototype-display: (
-  inline,
-  inline-block,
-  block,
-  table,
-  table-cell
-);
+$prototype-display: (inline, inline-block, block, table, table-cell);
 // 34. Prototype Font-Styling
 // --------------------------
 $prototype-font-breakpoints: $global-prototype-breakpoints;
@@ -539,11 +567,7 @@ $prototype-font-bold: $global-weight-bold;
 // 35. Prototype List-Style-Type
 // -----------------------------
 $prototype-list-breakpoints: $global-prototype-breakpoints;
-$prototype-style-type-unordered: (
-  disc,
-  circle,
-  square
-);
+$prototype-style-type-unordered: (disc, circle, square);
 $prototype-style-type-ordered: (
   decimal,
   lower-alpha,
@@ -556,20 +580,11 @@ $prototype-style-type-ordered: (
 // 36. Prototype Overflow
 // ----------------------
 $prototype-overflow-breakpoints: $global-prototype-breakpoints;
-$prototype-overflow: (
-  visible,
-  hidden,
-  scroll
-);
+$prototype-overflow: (visible, hidden, scroll);
 // 37. Prototype Position
 // ----------------------
 $prototype-position-breakpoints: $global-prototype-breakpoints;
-$prototype-position: (
-  static,
-  relative,
-  absolute,
-  fixed
-);
+$prototype-position: (static, relative, absolute, fixed);
 $prototype-position-z-index: 975;
 // 38. Prototype Rounded
 // ---------------------
@@ -590,10 +605,7 @@ $prototype-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 
 // 41. Prototype Sizing
 // --------------------
 $prototype-sizing-breakpoints: $global-prototype-breakpoints;
-$prototype-sizing: (
-  width,
-  height
-);
+$prototype-sizing: (width, height);
 $prototype-sizes: (
   25: 25%,
   50: 50%,
@@ -607,19 +619,11 @@ $prototype-spacers-count: 3;
 // 43. Prototype Text-Decoration
 // -----------------------------
 $prototype-decoration-breakpoints: $global-prototype-breakpoints;
-$prototype-text-decoration: (
-  overline,
-  underline,
-  line-through
-);
+$prototype-text-decoration: (overline, underline, line-through);
 // 44. Prototype Text-Transformation
 // ---------------------------------
 $prototype-transformation-breakpoints: $global-prototype-breakpoints;
-$prototype-text-transformation: (
-  lowercase,
-  uppercase,
-  capitalize
-);
+$prototype-text-transformation: (lowercase, uppercase, capitalize);
 // 45. Prototype Text-Utilities
 // ----------------------------
 $prototype-utilities-breakpoints: $global-prototype-breakpoints;
@@ -645,14 +649,14 @@ $reveal-overlay-background: rgba($black, 0.45);
 // ----------
 $slider-width-vertical: 0.5rem;
 $slider-transition: all 0.2s ease-in-out;
-$slider-height: 0.5rem;
-$slider-background: $light-gray;
-$slider-fill-background: $medium-gray;
-$slider-handle-height: 1.4rem;
-$slider-handle-width: 1.4rem;
-$slider-handle-background: $primary-color;
+$slider-height: rem-calc(23);
+$slider-background: #d6d6d6;
+$slider-fill-background: #73bc00;
+$slider-handle-height: rem-calc(44);
+$slider-handle-width: rem-calc(44);
+$slider-handle-background: #ececec;
 $slider-opacity-disabled: 0.25;
-$slider-radius: $global-radius;
+$slider-radius: 50%;
 // 49. Switch
 // ----------
 $switch-background: $medium-gray;
