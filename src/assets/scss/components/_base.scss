@@ -19,6 +19,10 @@
 //   overflow-y: auto;
 // }
 
+body {
+  min-width: 320px;
+}
+
 .off-canvas {
   &.is-open {
     & ~ .off-canvas-content {

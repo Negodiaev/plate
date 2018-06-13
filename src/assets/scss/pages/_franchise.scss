@@ -71,8 +71,19 @@
     background-color: $body-background;
     background-image: none;
     .card {
+      margin-bottom: rem-calc(20);
       background-color: transparent;
       box-shadow: none;
+    }
+    .advantage-picture,
+    .advantage-info {
+      padding-bottom: 0;
+    }
+    .advantage-picture {
+      padding-top: 0;
+    }
+    .advantage-info {
+      padding-top: rem-calc(12);
     }
   }
   .footer {
@@ -123,7 +134,7 @@
 
 .pluses-item-picture {
   margin-right: rem-calc(20);
-  width: rem-calc(60);
+  flex: 0 0 rem-calc(54);
   text-align: center;
   color: #f1ad05;
 }

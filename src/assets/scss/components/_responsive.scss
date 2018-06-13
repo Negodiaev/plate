@@ -283,6 +283,11 @@
         padding-left: rem-calc(40);
       }
     }
+    .advantages {
+      .card {
+        margin-bottom: 0;
+      }
+    }
   }
   .banner-title {
     font-size: rem-calc(40);
@@ -856,6 +861,16 @@
     .content-title-part {
       &.right {
         padding-left: rem-calc(75);
+      }
+    }
+    .advantages {
+      .card {
+        margin-bottom: rem-calc(28);
+      }
+      .advantage-picture,
+      .advantage-info {
+        padding-top: rem-calc(20);
+        padding-bottom: rem-calc(20);
       }
     }
     .banner {
