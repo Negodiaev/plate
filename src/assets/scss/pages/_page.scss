@@ -11,13 +11,14 @@
   .navigation {
     margin-left: auto;
     margin-right: auto;
-    max-width: rem-calc(350);
+    // max-width: rem-calc(380);
   }
   .hero {
-    height: rem-calc(300);
-    height: 50vh;
-    min-height: rem-calc(200);
-    background-attachment: initial;
+    // height: rem-calc(300);
+    // height: 50vh;
+    // min-height: rem-calc(200);
+    // background-image: none;
+    // background-attachment: initial;
   }
   .callback-phone {
     color: $white;

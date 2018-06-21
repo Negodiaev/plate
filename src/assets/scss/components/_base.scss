@@ -104,7 +104,13 @@ svg {
 }
 
 .section-title {
+  margin-top: 0;
+  font-family: $body-font-family;
+  font-size: rem-calc(26);
+  line-height: 1.4;
   font-weight: 300;
+  font-style: normal;
+  color: inherit;
 }
 
 .blocks {

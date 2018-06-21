@@ -69,6 +69,9 @@
     padding-top: rem-calc(20);
     padding-bottom: rem-calc(20);
   }
+  .section-title {
+    font-size: rem-calc(36);
+  }
   .head {
     padding-top: rem-calc(18);
     padding-bottom: rem-calc(15);
@@ -154,8 +157,8 @@
       }
     }
     .hero {
-      height: rem-calc(400);
-      height: 50vh;
+      // height: rem-calc(400);
+      // height: 50vh;
     }
     .map-wrapper,
     .map {
@@ -344,6 +347,7 @@
     margin-bottom: rem-calc(28);
   }
   .section-title {
+    font-size: rem-calc(45);
     margin-bottom: rem-calc(54);
   }
   .head {
@@ -532,7 +536,7 @@
       background-color: $anchor-color-hover;
     }
     .hero {
-      height: rem-calc(550);
+      // height: rem-calc(550);
       // height: 50vh;
     }
     .callback-phone {

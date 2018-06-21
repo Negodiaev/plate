@@ -1,7 +1,25 @@
 .hero {
   position: relative;
-  background: $dark-gray url(../../assets/img/bg-hero.jpg) 50% 50% no-repeat / cover;
-  background-attachment: fixed;
+  // background: $dark-gray url(../../assets/img/bg-hero.jpg) 50% 50% no-repeat / cover;
+  // background-attachment: fixed;
+  img {
+    &[src*='bg'] {
+      min-width: 100%;
+    }
+  }
+  &.with-content {
+    img {
+      &[src*='bg'] {
+        position: absolute;
+        z-index: -1;
+        max-width: none;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
 }
 
 .hero-slide-inner {
